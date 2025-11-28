@@ -21,6 +21,7 @@ Affichage des résultats et éventuellement des corrections / feedback selon l�
 
 📂 Structure du projet
 /
+
 ├── public/                  # Fichiers publics (HTML, favicon, …)
 
 ├── src/                     # Code source React (components, assets…)
