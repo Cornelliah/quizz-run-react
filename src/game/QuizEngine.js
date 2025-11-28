@@ -26,7 +26,7 @@ export async function fetchQuestion(category = "general_knowledge") {
     // Choisir seulement 2 mauvaises réponses
     const wrongs = shuffle(q.incorrectAnswers).slice(0, NUM_OPTIONS - 1);
 
-    // Mélange complet
+ 
     const options = shuffle([correct, ...wrongs]);
 
     // Indice de la bonne réponse

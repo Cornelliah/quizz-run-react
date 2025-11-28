@@ -1,33 +1,61 @@
+:root {
+  --text-color: #f0f0f0;
+  --primary-color: #00aaff; 
+  --secondary-color: #2c3e50;
+  --background-color: rgba(44, 62, 80, 0.85); 
+}
+
 .hud {
   position: absolute;
-  top: 10px;
+  top: 20px;
   width: 100%;
-  color: rgb(250, 246, 239);
-  font-family: "Press Start 2P", cursive;
+  color: var(--text-color);
+  font-family: 'Montserrat', sans-serif; 
   text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
 }
 
 .score {
-  font-size: 22px;
+  font-size: 2rem; 
   margin-bottom: 10px;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-shadow: 0 0 8px var(--primary-color), 0 0 2px rgba(0, 0, 0, 0.7); 
+  animation: pulse 2s infinite ease-in-out;
 }
 
 .question {
-  font-size: 18px;
-  margin-bottom: 40px;
-  color: #fcf9f9;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  line-height: 1.5;
+  background-color: var(--background-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto 0;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(5px); 
 }
 
-.answers {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.answers,
+.answer,
+.answer:hover,
+.answer:active {
+  
+  display: none;
 }
 
-.answer {
-  background: rgb(249, 242, 242);
-  padding: 10px 20px;
-  border: 2px solid rgb(93, 3, 3);
-  border-radius: 8px;
-  color: rgba(227, 5, 5, 0.785);
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

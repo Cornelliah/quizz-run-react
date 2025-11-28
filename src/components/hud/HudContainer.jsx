@@ -1,6 +1,6 @@
 import Score from "./Score";
 import Question from "./Question";
-import Answers from "./Answers";
+import Category from "./Category";
 import "./hud.css";
 
 export default function HUDContainer({ question, score, onAnswerChosen }) {
@@ -10,8 +10,8 @@ export default function HUDContainer({ question, score, onAnswerChosen }) {
       
       {question ? (
                 <>
+                  <Category text={question.category } />
                   <Question text={question.question} />
-                   <Answers options={question.options} />
                 </>
                ) : (
                  <p>Loading question...</p>
