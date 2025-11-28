@@ -1,5 +1,7 @@
 # Quizz Run React 
 <p align="center"> <img src="https://img.shields.io/badge/React-18+-blue" />  <img src="https://img.shields.io/badge/Status-Active-brightgreen" /> </p>
+<img width="943" height="443" alt="image" src="https://github.com/user-attachments/assets/43d4e488-e4d4-471b-872f-828282f9e340" />
+
 
 # Description
 
